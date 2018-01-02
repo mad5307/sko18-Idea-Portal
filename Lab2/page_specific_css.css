@@ -1,0 +1,20 @@
+main.page,
+main.body {
+    height: 99vh;
+    min-height: 100%;
+    padding-top: 0px !important;
+}
+
+section.page {
+    background-image: url('Login_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #3A3F50;
+}
+
+section.page main.body:before {
+    display: block;
+    background-color: #3A3F50;
+    opacity: 0.75;
+}
