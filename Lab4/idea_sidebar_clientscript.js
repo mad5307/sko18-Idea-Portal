@@ -10,9 +10,9 @@ function ideaSidebarCtrl($location, $scope, $rootScope, $window) {
     c.submitIdea = function() {
         // $location.search({
         //     id: 'idea_create',
-        //     sys_id: '97948f5bdb47070000e4f5861d96190e'
+        //     sys_id: 'df823500dba30f0094407f6bbf961917'
         // });
-        //$window.location.href = "/ideas?id=idea_create&sys_id=97948f5bdb47070000e4f5861d96190e";
+        //$window.location.href = "/idea?id=idea_create&sys_id=df823500dba30f0094407f6bbf961917";
     };
 
     //Broadcast event based on filter links. This event is caught in Idea List widget

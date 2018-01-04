@@ -70,8 +70,8 @@ function ideaListCtrl($http, $scope, glideUserSession, spUtil) {
             }
         }).then(function(response) {
             console.log(response);
-            c.ideas = response.data.result;
-            //c.ideas = getCreatedTimeAgo(response.data.result);
+            //c.ideas = response.data.result;
+            c.ideas = getCreatedTimeAgo(response.data.result);
             console.log(c.ideas);
         });
     }
@@ -87,6 +87,7 @@ function ideaListCtrl($http, $scope, glideUserSession, spUtil) {
 
     //Event caught based on filter selected in sidebar
     $scope.$on('filterClicked', function(event, data) {
+        console.log('event caught type is ' + data);
         c.getIdeas(data);
     });
 }
