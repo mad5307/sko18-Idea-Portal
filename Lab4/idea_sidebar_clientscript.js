@@ -12,7 +12,7 @@ function ideaSidebarCtrl($location, $scope, $rootScope, $window) {
         //     id: 'idea_create',
         //     sys_id: 'df823500dba30f0094407f6bbf961917'
         // });
-        //$window.location.href = "/idea?id=idea_create&sys_id=df823500dba30f0094407f6bbf961917";
+        $window.location.href = "/idea?id=idea_create&sys_id=df823500dba30f0094407f6bbf961917";
     };
 
     //Broadcast event based on filter links. This event is caught in Idea List widget
