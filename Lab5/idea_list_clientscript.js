@@ -13,6 +13,7 @@ function ideaListCtrl($http, $scope, glideUserSession, spUtil) {
 
     //Record watcher to keep lookout for votes
     spUtil.recordWatch($scope, "x_snc_idea_portal_idea_votes", "", function(name, data) {
+        console.log('Inside record watcher ' + name);
         var ideaSysid = '';
         var voteValue = name.data.record.voted.value === 'true';
         if (name.data.operation == 'update') {
@@ -70,8 +71,8 @@ function ideaListCtrl($http, $scope, glideUserSession, spUtil) {
             }
         }).then(function(response) {
             console.log(response);
-            //c.ideas = response.data.result;
-            c.ideas = getCreatedTimeAgo(response.data.result);
+            c.ideas = response.data.result;
+            //c.ideas = getCreatedTimeAgo(response.data.result);
             console.log(c.ideas);
         });
     }
