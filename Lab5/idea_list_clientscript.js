@@ -77,7 +77,7 @@ function ideaListCtrl($http, $scope, glideUserSession, spUtil) {
         });
     }
 
-    //Using moment js that come OOTB in Service portal to convert date time to user friendly time ago
+    //Using moment js that comes OOTB in Service portal to convert date time to user friendly time ago
     function getCreatedTimeAgo(ideas) {
         for (var index = 0; index < ideas.length; index++) {
             ideas[index].createdOnDate = moment(ideas[index].createdOnDate).fromNow();
